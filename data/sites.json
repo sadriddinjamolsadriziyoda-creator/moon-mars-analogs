@@ -158,19 +158,19 @@
     "photos": [],
     "sources": [
       {
-        "title": "NASA Astrobiology — Atacama Desert",
+        "title": "NASA Astrobiology — Atacama Desert fieldwork",
         "org": "NASA",
-        "url": "https://astrobiology.nasa.gov/atacama-desert/"
+        "url": "https://astrobiology.nasa.gov/"
       },
       {
-        "title": "Mars Analog and Research Sites",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       },
       {
-        "title": "ALMA — Atacama Large Millimeter Array",
+        "title": "ALMA — Atacama Large Millimeter/submillimeter Array",
         "org": "ESO",
-        "url": "https://www.eso.org/public/teles-instr/ALMA/"
+        "url": "https://www.eso.org/public/teles-instr/alma/"
       },
       {
         "title": "Copernicus DEM GLO-30",
@@ -334,9 +334,9 @@
         "url": "https://astrogeology.usgs.gov/search?pmi-target=dallol"
       },
       {
-        "title": "Mars Analog and Research Sites",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       },
       {
         "title": "ExoMars — mission overview",
@@ -501,9 +501,9 @@
         "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/AMADEE"
       },
       {
-        "title": "Rio Tinto — Mars analogue research",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       },
       {
         "title": "Rio Tinto Basin, Spain — planetary geology",
@@ -662,9 +662,9 @@
     "photos": [],
     "sources": [
       {
-        "title": "McMurdo Dry Valleys — Mars analogue",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       },
       {
         "title": "Antarctic Meteorite Network",
@@ -981,9 +981,9 @@
         "url": "https://mdrs.marssociety.org/about-mdrs"
       },
       {
-        "title": "Analog sites and Mars simulations",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       }
     ],
     "confidence": "high",
@@ -1111,9 +1111,9 @@
     "photos": [],
     "sources": [
       {
-        "title": "Desert analog sites",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       },
       {
         "title": "Wadi Rum — planetary geology",
@@ -1303,9 +1303,9 @@
     "photos": [],
     "sources": [
       {
-        "title": "Salar de Uyuni as a Mars analogue",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       },
       {
         "title": "Salar de Uyuni — planetary geology",
@@ -1479,9 +1479,9 @@
         "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration"
       },
       {
-        "title": "Mars analog research sites",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       }
     ],
     "confidence": "medium",
@@ -3456,9 +3456,9 @@
         "url": "https://astrogeology.usgs.gov/search?pmi-target=kyzylkum"
       },
       {
-        "title": "Central Asian deserts — Mars analogue discussion",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       },
       {
         "title": "Copernicus DEM GLO-30",
@@ -3611,9 +3611,9 @@
         "url": "https://astrogeology.usgs.gov/search?pmi-target=ust-yurt"
       },
       {
-        "title": "Central Asian deserts — Mars analogue discussion",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       },
       {
         "title": "Sentinel-2 — ESA Earth observation",
@@ -3924,9 +3924,9 @@
         "url": "https://astrogeology.usgs.gov/search?pmi-target=mangystau"
       },
       {
-        "title": "Karst systems and Mars channel analogues",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       },
       {
         "title": "Sentinel-2 — ESA Earth observation",
@@ -4489,9 +4489,9 @@
     ],
     "sources": [
       {
-        "title": "Mars analog and research sites",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       },
       {
         "title": "Valles Marineris — planetary geology",
@@ -4679,9 +4679,9 @@
     ],
     "sources": [
       {
-        "title": "Mars analog and research sites",
+        "title": "Mars Exploration — NASA Science",
         "org": "NASA",
-        "url": "https://www.nasa.gov/missions/mars-analog-research-sites/"
+        "url": "https://science.nasa.gov/mars/"
       },
       {
         "title": "Namib Desert — planetary geology",
