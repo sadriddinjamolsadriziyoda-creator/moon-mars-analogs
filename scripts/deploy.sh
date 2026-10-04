@@ -13,36 +13,38 @@ REPO="${1:-moon-mars-analogs}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
-: "${GH_TOKEN:?нужен classic GitHub PAT (ghp_...), fine-grained не умеет создавать репозитории}"
+# Push goes over SSH with the deploy key, so no GitHub token is required at all.
+OWNER="xcrpty7"
+SSH_KEY="${SSH_KEY:-$HOME/.ssh/moonmars_deploy}"
+git remote set-url origin "git@github-moon-mars:$OWNER/$REPO.git" 2>/dev/null || true
 : "${RENDER_API_KEY:?нужен Render API key (rnd_...)}"
 
 API="https://api.github.com"
 RENDER="https://api.render.com/v1"
 
-echo "── 1/4 проверяю доступ ──"
-OWNER="$(curl -fsS "$API/user" -H "Authorization: Bearer $GH_TOKEN" | node -pe 'JSON.parse(require("fs").readFileSync(0)).login')"
-echo "   GitHub: $OWNER"
-
-if curl -fsS -o /dev/null "$API/repos/$OWNER/$REPO" -H "Authorization: Bearer $GH_TOKEN"; then
-  echo "   репозиторий $OWNER/$REPO существует"
+echo "── 1/4 проверяю SSH-доступ ──"
+if ssh -T -o IdentitiesOnly=yes -o ConnectTimeout=10 -i "$SSH_KEY" git@github.com 2>&1 | grep -q "successfully authenticated"; then
+  echo "   GitHub: $OWNER через SSH-ключ"
 else
-  echo "   ОШИБКА: $OWNER/$REPO не найден. Создай пустой репозиторий: https://github.com/new?name=$REPO&visibility=public" >&2
-  echo "   (без README, .gitignore и лицензии — они уже есть локально)" >&2
+  echo "   ОШИБКА: SSH-ключ отклонён или read-only. Добавь ключ в настройках АККАУНТА:" >&2
+  echo "   https://github.com/settings/ssh/keys/new" >&2
+  echo "   Ключ: $(cat "$SSH_KEY.pub")" >&2
   exit 1
 fi
 
 echo "── 2/4 пушу коммиты ──"
-# The token goes into the URL for this one command and is never written to .git/config.
-git push --force "https://x-access-token:$GH_TOKEN@github.com/$OWNER/$REPO.git" HEAD:main
+git push -u origin main
 
 echo "── 3/4 создаю сервисы Render ──"
-# Render needs the GitHub connection id, not the owner login.
-CONN="$(curl -fsS "$RENDER/connections" -H "Authorization: Bearer $RENDER_API_KEY" \
-  | node -pe 'const c=JSON.parse(require("fs").readFileSync(0)).find(x=>x.provider==="github"); c ? c.id : ""')"
-if [ -z "$CONN" ]; then
-  echo "   ОШИБКА: у Render нет подключения к GitHub. Открой https://render.com/connections и подключи." >&2
+# Render needs the workspace owner id (a team, not a GitHub login). /v1/connections
+# does not exist; the owner id comes from /v1/owners.
+OWNER_ID="$(curl -fsS "$RENDER/owners" -H "Authorization: Bearer $RENDER_API_KEY" \
+  | node -pe 'const o=JSON.parse(require("fs").readFileSync(0)); (o[0] && (o[0].owner ? o[0].owner.id : o[0].id)) || ""')"
+if [ -z "$OWNER_ID" ]; then
+  echo "   ОШИБКА: не удалось получить workspace id из Render." >&2
   exit 1
 fi
+echo "   workspace: $OWNER_ID"
 
 create_service() {
   local name="$1" root="$2" build="$3" start="$4" plan="$5" envs="$6"
@@ -54,7 +56,7 @@ create_service() {
   curl -fsS -X POST "$RENDER/services" \
     -H "Authorization: Bearer $RENDER_API_KEY" \
     -H "Content-Type: application/json" \
-    -d "{\"type\":\"$plan\",\"name\":\"$name\",\"repo\":\"$OWNER/$REPO\",\"ownerId\":\"$CONN\",\"branch\":\"main\",\"rootDir\":\"$root\",\"plan\":\"free\",\"buildCommand\":\"$build\",\"startCommand\":\"$start\",\"autoDeploy\":true,\"envVars\":$envs}" \
+    -d "{\"type\":\"$plan\",\"name\":\"$name\",\"repo\":\"$OWNER/$REPO\",\"ownerId\":\"$OWNER_ID\",\"branch\":\"main\",\"rootDir\":\"$root\",\"plan\":\"free\",\"buildCommand\":\"$build\",\"startCommand\":\"$start\",\"autoDeploy\":true,\"envVars\":$envs}" \
     | node -pe '"   создан: " + (JSON.parse(require("fs").readFileSync(0)).service?.name ?? JSON.parse(require("fs").readFileSync(0)).message ?? "ошибка")'
 }
 

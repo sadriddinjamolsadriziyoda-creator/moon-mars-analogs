@@ -17,3 +17,6 @@ data/sites-mars.json
 data/sites-moon.json
 data/sites-central-asia.json
 data/sites-extra.json
+
+# Local Playwright MCP snapshot output
+.playwright-mcp/
