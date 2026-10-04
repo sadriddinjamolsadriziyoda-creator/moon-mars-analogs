@@ -14,12 +14,13 @@ const OSM_ATTRIBUTION = '© OpenStreetMap contributors';
 /**
  * Mars: MOLA colour mosaic, verified 200 image/png.
  *
- * Served through the app's own origin rather than straight from the bucket: the bucket sends
- * no Access-Control-Allow-Origin, which a WebGL texture request requires, so the map rendered
- * black while every status-code probe reported the source as healthy. `/tiles-mars` is a Vite
- * proxy in development and must be mirrored by the production reverse proxy.
+ * Relayed by the API (server/src/routes/tiles.ts) rather than fetched from the bucket: the
+ * bucket sends no Access-Control-Allow-Origin, which a WebGL texture request requires, so the
+ * map rendered black while every status-code probe reported the source as healthy. Going
+ * through the API works identically in development and in production.
  */
-const MARS_TILES = '/tiles-mars/whereonmars.cartodb.net/mola-color/{z}/{x}/{y}.png';
+const API_BASE = (import.meta.env.VITE_API_URL as string | undefined) ?? '';
+const MARS_TILES = `${API_BASE}/api/tiles/mars/{z}/{x}/{y}`;
 
 /**
  * Moon: no working public tile source exists.

@@ -9,6 +9,7 @@ import { connectDb, isDbReady, describeError } from './db';
 import { loadCatalogFromDisk } from './store/catalog';
 import { sitesRouter } from './routes/sites';
 import { similarityRouter } from './routes/similarity';
+import { tilesRouter } from './routes/tiles';
 import { createAdminRouter } from './routes/admin';
 import { requireAdmin } from './auth';
 
@@ -59,6 +60,7 @@ async function main(): Promise<void> {
       });
   });
 
+  app.use('/api', tilesRouter);
   app.use('/api', sitesRouter);
   app.use('/api', similarityRouter);
   app.use('/api/admin', createAdminRouter(requireAdmin(process.env.ADMIN_TOKEN)));

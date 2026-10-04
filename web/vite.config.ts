@@ -20,21 +20,6 @@ export default defineConfig({
         changeOrigin: true,
       },
 
-      /**
-       * The MOLA basemap lives on a public S3 bucket that serves 200 with a real PNG but
-       * sends no Access-Control-Allow-Origin header. A WebGL texture needs CORS, so the map
-       * stayed black: a status-code check calls this source healthy. Proxying it through our
-       * own origin makes the request same-origin and the tiles actually load.
-       *
-       * A production deploy needs the same rule on its reverse proxy; tileSources.ts points at
-       * the relative path so no code change is needed.
-       */
-      '/tiles-mars': {
-        target: 'https://s3-eu-west-1.amazonaws.com',
-        changeOrigin: true,
-        secure: true,
-        rewrite: (path) => path.replace(/^\/tiles-mars/, ''),
-      },
     },
   },
   build: {
