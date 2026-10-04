@@ -1,0 +1,60 @@
+# Render blueprint: Node API + static frontend.
+#
+# Create with: New → Blueprint → point at this repository and pick this file.
+# Both services build from the same commit, so a deploy can never ship a frontend
+# that expects an API version the backend does not have.
+
+services:
+  - type: web
+    name: moon-mars-api
+    runtime: node
+    plan: free
+    region: oregon
+    rootDir: server
+    buildCommand: pnpm install --no-frozen-lockfile
+    startCommand: pnpm start
+    healthCheckPath: /api/health
+    # Free instances sleep after inactivity, so the first request after an idle
+    # period can take a few seconds. The frontend ships a bundled catalog and falls
+    # back to it, which is why a cold start does not break the demo.
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 22.14.0
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      # Empty MONGODB_URI is the supported offline mode: the API serves the bundled
+      # catalog and disables the admin routes.
+      - key: MONGODB_URI
+        sync: false
+      - key: ADMIN_TOKEN
+        generateValue: true
+      # Set to the frontend's origin after the static site exists, comma-separated.
+      - key: CORS_ORIGIN
+        sync: false
+
+  - type: web
+    name: moon-mars-web
+    runtime: static
+    plan: free
+    region: oregon
+    rootDir: web
+    # Textures are not committed (2.5 MB of binaries), so the build fetches them.
+    # Without them the globe renders black.
+    buildCommand: pnpm install --no-frozen-lockfile && sh ../scripts/fetch-textures.sh && pnpm build
+    staticPublishPath: ./dist
+    # Client-side routing: /compare, /method and the rest must fall back to index.html.
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 22.14.0
+      # Baked into the bundle at build time. Must point at the API service, otherwise the
+      # app silently falls back to its bundled catalog and the Mars tiles never load.
+      - key: VITE_API_URL
+        sync: false
