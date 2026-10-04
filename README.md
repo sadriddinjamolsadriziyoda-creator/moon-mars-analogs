@@ -98,3 +98,36 @@ scripts/       валидация данных, отчёт по баллам
 
 25+ локаций, у каждой ≥3 источника и фото. Три локации помечены `needs-review`:
 `kaumana-caves`, `ustyurt-plateau`, `dried-aral-bed` — ждут научной проверки.
+## Деплой
+
+Живая версия: **https://moon-mars-analogs.vercel.app**
+
+Vercel собирает проект из репозитория по `vercel.json` в корне:
+
+```json
+"installCommand": "pnpm install --no-frozen-lockfile",
+"buildCommand":  "sh scripts/fetch-textures.sh && pnpm --dir web install && pnpm --dir web run build",
+"outputDirectory": "web/dist"
+```
+
+Root Directory — корень репозитория, Framework Preset — Other. Корень выбран потому, что
+`web/vite.config.ts` резолвит `@shared` и `@data` в каталоги вне `web/`, а текстуры глобуса
+(~2.5 МБ бинарников) не лежат в git и скачиваются на шаге сборки.
+
+`rewrites` отдают все пути, кроме `/assets/` и `/textures/`, в `index.html`: приложение
+на клиентском роутере, и `/compare` без rewrite отдал бы 404.
+
+Сборка идёт из трёх install-root (`./`, `web/`, `server/`) — у каждого свой lockfile, поэтому
+в build-команде два `pnpm install`, а не один.
+
+API (`server/`) на Vercel не задеплоен: он читает `data/*.json` по пути относительно корня
+репозитория, а function bundling не включает файлы вне каталога сервиса. Пока фронтенд запущен
+без него, приложение работает в автономном режиме — каталог вшит в бандл. Следствие: плитки
+Марса в `/compare` не грузятся, их релеит `/api/tiles/mars` (см. `web/src/map/tileSources.ts`).
+Когда API появится, достаточно задать `VITE_API_URL` и передеплоить фронтенд.
+
+Локально всё то же самое:
+
+```bash
+./scripts/deploy.sh
+```
