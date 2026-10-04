@@ -1,0 +1,33 @@
+{
+  "name": "moon-mars-analogs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interactive atlas of terrestrial places that are analogues for the Moon and Mars",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=web & npm run dev --workspace=moon-mars-analogs-server",
+    "dev:web": "npm run dev --workspace=web",
+    "dev:server": "npm run dev --workspace=moon-mars-analogs-server",
+    "build": "npm run build --workspace=web",
+    "validate": "tsx scripts/validate-data.ts",
+    "score": "tsx scripts/report-scores.ts",
+    "check-sources": "npm run validate-sources --workspace=moon-mars-analogs-server",
+    "seed": "npm run seed --workspace=moon-mars-analogs-server",
+    "test": "tsx --test server/test/*.test.ts",
+    "typecheck": "tsc --noEmit && npm run typecheck --workspace=web",
+    "install:all": "npm install && npm run seed"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

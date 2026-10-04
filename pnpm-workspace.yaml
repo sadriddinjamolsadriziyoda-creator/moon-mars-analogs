@@ -1,0 +1,6 @@
+allowBuilds:
+  esbuild: set this to true or false
+# pnpm 11 reads build-script approvals from here, not from the "pnpm" key in package.json.
+# esbuild is the only package with a build step; it is what tsx uses to run TypeScript.
+onlyBuiltDependencies:
+  - esbuild

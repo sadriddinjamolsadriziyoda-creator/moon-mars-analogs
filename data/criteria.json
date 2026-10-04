@@ -1,0 +1,98 @@
+[
+  {
+    "id": "relief",
+    "label": {
+      "ru": "Рельеф",
+      "en": "Relief",
+      "uz": "Relief"
+    },
+    "weight": 0.22,
+    "tolerance": 0.35,
+    "description": {
+      "ru": "Средние уклоны, шероховатость поверхности, доля ударных кратеров и дюн. Высокий балл ставится местам с плоской или слегка волнистой поверхностью, покрытой мелким камнем или песком, где нет леса, травы и водной эрозии — как на марсианской равнине или в лунном море.",
+      "en": "Mean slopes, surface roughness, fraction of impact craters and dunes. A high score goes to terrain that is flat or gently rolling, covered in fine gravel or sand, with no vegetation and no water erosion — like a Martian plain or a lunar mare.",
+      "uz": "O'rtacha tikishlar, yuzaning g'adirbuyligi, kraterlar va dune'lar ulushi. Yuqori ball tekis yoki yengil to'lqinli, mayda tosh yoki qum bilan qoplangan, o'simlik va suv eroziyasi yo'q joylarga qo'yiladi."
+    },
+    "source": "SRTM / Copernicus DEM (Earth), MOLA DTM (Mars), LRO LRODEM (Moon)"
+  },
+  {
+    "id": "geology",
+    "label": {
+      "ru": "Геология и минералогия",
+      "en": "Geology & mineralogy",
+      "uz": "Geologiya va mineralogiya"
+    },
+    "weight": 0.2,
+    "tolerance": 0.3,
+    "description": {
+      "ru": "Набор минералов: базальты, сульфаты, глины, гематит, ильменит. Сравнивается не число, а «рецептура» — вектор из пяти долей. Критерий считается по косинусу угла между двумя рецептурами, то есть важно не сколько именно, а насколько похожий набор. Высокий балл — базальтовые поля и вулканическая пемза для Луны, гипс и хлориды для Марса.",
+      "en": "The mineral recipe: basalts, sulfates, clays, hematite, ilmenite. What matters is not the amount but the ratio — a five-component vector compared by cosine angle. A high score means basalt fields and volcanic pumice for the Moon, gypsum and chlorides for Mars.",
+      "uz": "Mineral tarkibi: bazaltlar, sulfatlar, gillar, gematit, ilmenit. Miqdor emas, nisbat muhim — beshta ulushdan iborat vektor kosinus burchagi bilan solishtiriladi."
+    },
+    "source": "USGS Spectral Library, CRISM / OMEGA hyperspectral data, published mineral maps"
+  },
+  {
+    "id": "climate",
+    "label": {
+      "ru": "Климат",
+      "en": "Climate",
+      "uz": "Iqlim"
+    },
+    "weight": 0.2,
+    "tolerance": 0.4,
+    "description": {
+      "ru": "Средняя температура, количество осадков, влажность и перепад между днём и ночью. Высокий балл — это засушливость: почти нет осадков, мало облаков, резкие колебания температуры. Это самый «марсианский» критерий после рельефа.",
+      "en": "Mean temperature, precipitation, humidity, and the day-night swing. A high score means aridity: almost no rain, little cloud, sharp temperature swings. This is the most Martian criterion after relief.",
+      "uz": "O'rtacha harorat, yog'moq, namlik va kecha-kun farqi. Yuqori ball quruqlikni bildiradi: deyarli yog'moq yo'q, bulut kam, harorat keskin o'zgaradi."
+    },
+    "source": "NASA POWER climatology 1991–2020, ERA5 reanalysis, Mars surface temperature from Viking and MEDA"
+  },
+  {
+    "id": "illumination",
+    "label": {
+      "ru": "Освещённость и УФ",
+      "en": "Illumination & UV",
+      "uz": "Yoritilish va UF"
+    },
+    "weight": 0.1,
+    "tolerance": 0.45,
+    "description": {
+      "ru": "Уровень ультрафиолета, суточный цикл освещения и контраст день/ночь. Высокий балл — высокогорье или полярная пустыня, где тонкая атмосфера пропускает жёсткий УФ, а ночь очень длинная и холодная. Вес небольшой: радиация зависит от высоты и широты, а не от горного порода.",
+      "en": "UV level, day-night illumination cycle, and day-night contrast. A high score means high altitude or polar desert, where a thin atmosphere passes hard UV and the night is long and cold. Weighted low: radiation follows altitude and latitude, not rock type.",
+      "uz": "UF darajasi, kecha-kun yorug'lik sikli va kontrast. Yuqori ball — balandlik yoki qutroqiy cho'llik. Vazn kichik: radiatsiya balandlik va kenglikdan bog'liq."
+    },
+    "source": "NASA POWER TOMS UV, TIBv radiation model, O2/NO2 column data"
+  },
+  {
+    "id": "hydrology",
+    "label": {
+      "ru": "Гидрология и биосигнатуры",
+      "en": "Hydrology & biosignatures",
+      "uz": "Gidrologiya va biosignalar"
+    },
+    "weight": 0.13,
+    "tolerance": 0.4,
+    "description": {
+      "ru": "Солёные и кислые озёра, сухие русла, выцветшая соль, наличие экстремофилов и окаменелостей. Высокий балл — место, где сохранились следы древней воды и где живут организмы в экстремальных условиях. Это ключ к вопросу «где искать жизнь на Марсе».",
+      "en": "Saline and acidic lakes, dry channels, evaporite crusts, extremophiles, fossils. A high score means the place preserves traces of ancient water and hosts life under extreme conditions. This is the key to \"where do we look for life on Mars\".",
+      "uz": "Sho'r va kislota ko'llar, quruq daryo o'zanlari, bug'lanish qobiq, ekstremofil organizmlar. Yuqori ball — qadimiy suv izlari va ekstremal sharoitdagi hayot saqlangan joy."
+    },
+    "source": "Published field studies, evaporite mineralogy, extremophile microbiology literature, Mars orbital water evidence"
+  },
+  {
+    "id": "engineering",
+    "label": {
+      "ru": "Инженерное сходство",
+      "en": "Engineering analog",
+      "uz": "Muhandislikka yaqinligi"
+    },
+    "weight": 0.15,
+    "tolerance": 0.5,
+    "description": {
+      "ru": "Изоляция, логистика, пещеры и лавовые трубки как убежища, близость аэродрома и базы, возможность выживания автономно. Высокий балл — это то, что реально помогает инженеру: здесь уже тренировались, есть пещера для укрытия и можно долететь на вертолёте. Допуск самый широкий, потому что этот критерий оценивается по объективным признакам, а не по тонкой науке.",
+      "en": "Isolation, logistics, caves and lava tubes as shelter, runway and base proximity, ability to operate autonomously. A high score is what actually helps an engineer: crews have trained here, there is a cave to shelter in, a helicopter can reach it. Widest tolerance, because this criterion is scored on hard operational facts, not fine science.",
+      "uz": "Izolyatsiya, logistika, g'orlar va lava quvurlari, aerodrom yaqinligi. Yuqori ball — muhandisga amaliy foyda beradi. Eng keng chegara, chunki mezon aniq faktlarga asoslanadi."
+    },
+    "source": "Base and field-station documentation, mission analog campaigns, volcanic cave surveys"
+  }
+]

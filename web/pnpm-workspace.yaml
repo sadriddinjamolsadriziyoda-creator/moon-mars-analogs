@@ -1,0 +1,7 @@
+allowBuilds:
+  esbuild: set this to true or false
+# pnpm 11 reads build-script approvals from here, not from the "pnpm" key in package.json.
+# web/ is its own install root (it has its own package.json and lockfile), so the
+# approval made at the repository root does not cover esbuild here.
+onlyBuiltDependencies:
+  - esbuild

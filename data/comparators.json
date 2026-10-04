@@ -1,0 +1,1481 @@
+[
+  {
+    "slug": "jezero-crater",
+    "name": {
+      "ru": "Кратер Езеро",
+      "en": "Jezero Crater",
+      "uz": "Ezero krateri"
+    },
+    "body": "mars",
+    "center": [
+      18.38,
+      18.38
+    ],
+    "radiusKm": 45,
+    "terrainTags": [
+      "delta",
+      "ancient-lake",
+      "clay",
+      "hematite",
+      "exo-mars-2020"
+    ],
+    "description": {
+      "ru": "Древний кратер с дельтой реки и остатками озера. Perseverance здесь ищет древний микробный след в глинистом матриксе дна озера — главная цель миссии ExoMars-2020.",
+      "en": "An ancient crater holding a river delta and a dried lake. Perseverance searches this clay lake-bed sediment for ancient microbial traces — the primary ExoMars-2020 target.",
+      "uz": "Drevniy krater daryo deltasi va quruq ko'l bilan. Perseverance shu g'il tarkibli cho'k qatlamida qadimiy mikrobiot izlarini izlaydi."
+    },
+    "features": {
+      "relief": {
+        "value": 0.45,
+        "evidence": "medium",
+        "note": {
+          "ru": "Кратерная чаша, окружённая плавной равниной.",
+          "en": "A crater bowl ringed by a smooth plain."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.92,
+        "evidence": "high",
+        "note": {
+          "ru": "Крайне холодно и сухо в среднем.",
+          "en": "Extremely cold and dry on average."
+        }
+      },
+      "illumination": {
+        "value": 0.6,
+        "evidence": "medium",
+        "note": {
+          "ru": "Тонкая атмосфера, слабый УФ в широтах 18°.",
+          "en": "Thin atmosphere, modest UV at 18°N."
+        }
+      },
+      "hydrology": {
+        "value": 0.88,
+        "evidence": "high",
+        "note": {
+          "ru": "Дельта и озерная осадочная толща.",
+          "en": "A delta and lake sediment record."
+        }
+      },
+      "engineering": {
+        "value": 0.9,
+        "evidence": "high",
+        "note": {
+          "ru": "Главная цель научной автоматической миссии.",
+          "en": "Primary target of an autonomous robotic mission."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 1,
+      "sulfate": 2,
+      "basalt": 0.2,
+      "clay": 3,
+      "ilmenite": 0
+    }
+  },
+  {
+    "slug": "gale-crater",
+    "name": {
+      "ru": "Кратер Гейла",
+      "en": "Gale Crater",
+      "uz": "Geyl krateri"
+    },
+    "body": "mars",
+    "center": [
+      -138.25,
+      -5.48
+    ],
+    "radiusKm": 100,
+    "terrainTags": [
+      "impact-crater",
+      "mudstone",
+      "shale",
+      "organic-molecules",
+      "msl"
+    ],
+    "description": {
+      "ru": "Кратер возрастом около 4 млрд лет, вскрывший древние слои осадочных пород. Curiosity нашла там органические молекулы и признаки древних вод.",
+      "en": "A roughly 4-billion-year-old impact crater exposing layered ancient sediments. Curiosity found organic molecules and evidence of old water there.",
+      "uz": "4 mlrd yillik krater qadimiy cho'k qatlamlarini ochadi. Curiosity u yerda organik molekulalar va qadimiy suv izlarini topdi."
+    },
+    "features": {
+      "relief": {
+        "value": 0.5,
+        "evidence": "medium",
+        "note": {
+          "ru": "Ровное дно и окружающие гряды.",
+          "en": "A flat floor with surrounding ridges."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.95,
+        "evidence": "high",
+        "note": {
+          "ru": "Холодная пустыня, почти нет осадков.",
+          "en": "A cold desert with almost no precipitation."
+        }
+      },
+      "illumination": {
+        "value": 0.55,
+        "evidence": "medium",
+        "note": {
+          "ru": "Пыль и озоновый слой смягчают УФ.",
+          "en": "Dust and ozone moderate the UV."
+        }
+      },
+      "hydrology": {
+        "value": 0.8,
+        "evidence": "high",
+        "note": {
+          "ru": "Пресные озёра по данным MEDA.",
+          "en": "Freshwater lakes indicated by MEDA data."
+        }
+      },
+      "engineering": {
+        "value": 0.95,
+        "evidence": "high",
+        "note": {
+          "ru": "Год работы марсохода Curiosity здесь.",
+          "en": "A full year of Curiosity rover operations."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0.6,
+      "sulfate": 2.5,
+      "basalt": 1,
+      "clay": 3,
+      "ilmenite": 0
+    }
+  },
+  {
+    "slug": "valles-marineris",
+    "name": {
+      "ru": "Долины Маринера",
+      "en": "Valles Marineris",
+      "uz": "Mariner vodiylari"
+    },
+    "body": "mars",
+    "center": [
+      -57,
+      -13
+    ],
+    "radiusKm": 800,
+    "terrainTags": [
+      "canyon",
+      "water-carved",
+      "layered-sediment",
+      "clay"
+    ],
+    "description": {
+      "ru": "Система каньонов длиной 4000 км и глубиной до 7 км — крупнейший каньон в Солнечной системе. В стенах видны слоистые осадочные породы, залегающие на месте древних озёр.",
+      "en": "A 4,000 km network of canyons up to 7 km deep — the largest canyon system in the Solar System. Layered sediments in the walls formed in ancient lakes.",
+      "uz": "4000 km uzunlikdagi vodiylar tizimi — Quyosh tizimidagi eng katta vodiy. Devorlarida qadimiy ko'llarda hosil bo'lgan qatlamlar ko'rinadi."
+    },
+    "features": {
+      "relief": {
+        "value": 0.75,
+        "evidence": "high",
+        "note": {
+          "ru": "Стены из чередующихся пластов, плоская долина.",
+          "en": "Alternating plateaus in the walls, flat valley floor."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.88,
+        "evidence": "medium",
+        "note": {
+          "ru": "Пыльный аналог Великой пустыни.",
+          "en": "A dusty analogue to the Great Sandy Desert."
+        }
+      },
+      "illumination": {
+        "value": 0.7,
+        "evidence": "medium",
+        "note": {
+          "ru": "Обрывистые стены ловят косой свет.",
+          "en": "Steep walls catch oblique sunlight."
+        }
+      },
+      "hydrology": {
+        "value": 0.7,
+        "evidence": "high",
+        "note": {
+          "ru": "Явные следы водной эрозии.",
+          "en": "Clear traces of water erosion."
+        }
+      },
+      "engineering": {
+        "value": 0.65,
+        "evidence": "medium",
+        "note": {
+          "ru": "Крайне труднодоступен — аналог по масштабу.",
+          "en": "Extremely hard to reach — an analogue of scale."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0.8,
+      "sulfate": 2.5,
+      "basalt": 1,
+      "clay": 2.5,
+      "ilmenite": 0
+    }
+  },
+  {
+    "slug": "olympus-mons",
+    "name": {
+      "ru": "Олимп",
+      "en": "Olympus Mons",
+      "uz": "Olimp"
+    },
+    "body": "mars",
+    "center": [
+      -133.8,
+      18.65
+    ],
+    "radiusKm": 300,
+    "terrainTags": [
+      "shield-volcano",
+      "basalt",
+      "phreatomagmatic",
+      "landslide"
+    ],
+    "description": {
+      "ru": "Крупнейший вулкан Солнечной системы: 21,9 км высоты и 600 км в ширину. Сложен базальтом, склоны местами осыпаются оползнями.",
+      "en": "The tallest volcano in the Solar System: 21.9 km high, 600 km wide. Built from basalt, with slope-collapse landslides on its flanks.",
+      "uz": "Quyosh tizimidagi eng baland vulqon: 21,9 km, bazaltdan tuzilgan, yonbag'irlarida opolzni uchunlari bor."
+    },
+    "features": {
+      "relief": {
+        "value": 0.6,
+        "evidence": "high",
+        "note": {
+          "ru": "Градиент склона около 5°.",
+          "en": "A slope gradient near 5°."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.9,
+        "evidence": "high",
+        "note": {
+          "ru": "Холодная сухая равнина вокруг.",
+          "en": "A cold dry plain surrounds it."
+        }
+      },
+      "illumination": {
+        "value": 0.65,
+        "evidence": "medium",
+        "note": {
+          "ru": "Облачность над вершиной, но УФ слабый.",
+          "en": "Clouds cap the summit; UV is low."
+        }
+      },
+      "hydrology": {
+        "value": 0.3,
+        "evidence": "medium",
+        "note": {
+          "ru": "Есть древние лавовые озёра и фумаролы.",
+          "en": "Ancient lava lakes and fumaroles present."
+        }
+      },
+      "engineering": {
+        "value": 0.5,
+        "evidence": "medium",
+        "note": {
+          "ru": "Референс для базальтовых вулканов Земли.",
+          "en": "A reference for terrestrial basaltic shields."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0.2,
+      "sulfate": 0.3,
+      "basalt": 4,
+      "clay": 0.4,
+      "ilmenite": 0
+    }
+  },
+  {
+    "slug": "aram-khnum-silica",
+    "name": {
+      "ru": "Кремнезёмовое месторождение Арам-Хнум",
+      "en": "Aram Khnum Silica Deposit",
+      "uz": "Aram Xnum kremniy konsepsi"
+    },
+    "body": "mars",
+    "center": [
+      55,
+      -19.5
+    ],
+    "radiusKm": 25,
+    "terrainTags": [
+      "hydrothermal",
+      "silica",
+      "deposit",
+      "analog-analog"
+    ],
+    "description": {
+      "ru": "Гидротермальная система в кратере: богатое отложение кремнезёма, которое могло образоваться при участии воды и жизни. Прямой аналог земных кремнистых терм.",
+      "en": "A hydrothermal system in a crater, holding a rich silica deposit that may have formed with help from water and life. A direct analogue for terrestrial siliceous hot springs.",
+      "uz": "Kraterdagi gidrotermal tizim: kremniyga boy qatlam. Yer qaynoq kremniy manbalarining bevosita analogi."
+    },
+    "features": {
+      "relief": {
+        "value": 0.4,
+        "evidence": "medium",
+        "note": {
+          "ru": "Кратер с разрушенным дном.",
+          "en": "A crater with a breached floor."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.85,
+        "evidence": "medium",
+        "note": {
+          "ru": "Южное полушарие, сухо и холодно.",
+          "en": "Southern hemisphere: dry and cold."
+        }
+      },
+      "illumination": {
+        "value": 0.5,
+        "evidence": "low",
+        "note": {
+          "ru": "Оценка ориентировочная.",
+          "en": "Rough estimate."
+        }
+      },
+      "hydrology": {
+        "value": 0.72,
+        "evidence": "high",
+        "note": {
+          "ru": "Следы гидротермальной воды.",
+          "en": "Traces of hydrothermal water."
+        }
+      },
+      "engineering": {
+        "value": 0.95,
+        "evidence": "high",
+        "note": {
+          "ru": "Главный марсианский аналог кремнистых терм.",
+          "en": "The prime Martian analogue for siliceous hot springs."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0.6,
+      "sulfate": 1.2,
+      "basalt": 2,
+      "clay": 0.3,
+      "ilmenite": 0
+    }
+  },
+  {
+    "slug": "nili-fossae",
+    "name": {
+      "ru": "Нили-Фосса",
+      "en": "Nili Fossae",
+      "uz": "Nili Fossa"
+    },
+    "body": "mars",
+    "center": [
+      77.5,
+      21.8
+    ],
+    "radiusKm": 40,
+    "terrainTags": [
+      "hematite",
+      "clay",
+      "wind-streak",
+      "canyon"
+    ],
+    "description": {
+      "ru": "Тёмные полосы ветрового происхождения с сильным сигналом гематита — редкого для Марса минерала, который на Земле образуется при участии воды.",
+      "en": "Dark wind streaks carrying a strong hematite signature — a mineral rare on Mars and one that on Earth forms with water.",
+      "uz": "Shamol yo'nalishidagi to'q yo'llar kuchli gematit signalini ko'rsatadi — Yerdagi suv ishtirokida hosil bo'ladigan mineral."
+    },
+    "features": {
+      "relief": {
+        "value": 0.35,
+        "evidence": "medium",
+        "note": {
+          "ru": "Ровная поверхность с неглубокими бороздами.",
+          "en": "A flat surface with shallow troughs."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.9,
+        "evidence": "medium",
+        "note": {
+          "ru": "Экваториальная сухая пустыня.",
+          "en": "An equatorial dry desert."
+        }
+      },
+      "illumination": {
+        "value": 0.55,
+        "evidence": "medium",
+        "note": {
+          "ru": "Мощное ветровое обдувание.",
+          "en": "Heavy wind scouring."
+        }
+      },
+      "hydrology": {
+        "value": 0.6,
+        "evidence": "medium",
+        "note": {
+          "ru": "Гематит указывает на древнюю воду.",
+          "en": "The hematite points to ancient water."
+        }
+      },
+      "engineering": {
+        "value": 0.7,
+        "evidence": "medium",
+        "note": {
+          "ru": "Референс для поиска гематита на Земле.",
+          "en": "A reference for hematite prospecting on Earth."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 4,
+      "sulfate": 0.4,
+      "basalt": 0.5,
+      "clay": 2,
+      "ilmenite": 0
+    }
+  },
+  {
+    "slug": "mawrth-vallis",
+    "name": {
+      "ru": "Долина Маурт",
+      "en": "Mawrth Vallis",
+      "uz": "Mavrtof vodiysi"
+    },
+    "body": "mars",
+    "center": [
+      -21.5,
+      8
+    ],
+    "radiusKm": 200,
+    "terrainTags": [
+      "fluvial",
+      "delta",
+      "clay",
+      "groundwater",
+      "exo-mars-2020"
+    ],
+    "description": {
+      "ru": "Старейший марсианский водный ландшафт: извилистые долины и обломочные конусы выноса. NASA и ESA признали его первоочередной целью будущей миссии с возвратом грунта.",
+      "en": "The oldest Martian fluvial landscape: sinuous valleys and debris aprons. NASA and ESA name it a priority target for a future sample return mission.",
+      "uz": "Marsdagi eng qadimiy suv landshafti: burmali vodiylar va chiqindi konuslari. Kelajakdagi namuna qaytarish missiyasi uchun ustuvor."
+    },
+    "features": {
+      "relief": {
+        "value": 0.5,
+        "evidence": "high",
+        "note": {
+          "ru": "Извилистая сеть долин на равнине.",
+          "en": "A sinuous valley network on a plain."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.88,
+        "evidence": "medium",
+        "note": {
+          "ru": "Северный экватор, древняя вода.",
+          "en": "Northern equatorial, ancient water."
+        }
+      },
+      "illumination": {
+        "value": 0.5,
+        "evidence": "medium",
+        "note": {
+          "ru": "Приполярный УФ заметно слабее.",
+          "en": "Sub-polar UV is noticeably weaker."
+        }
+      },
+      "hydrology": {
+        "value": 0.92,
+        "evidence": "high",
+        "note": {
+          "ru": "Выраженная гидросеть и грунтовый сток.",
+          "en": "A clear channel network and subsurface flow."
+        }
+      },
+      "engineering": {
+        "value": 0.85,
+        "evidence": "high",
+        "note": {
+          "ru": "Приоритетная цель ExoMars-2020 и Mars Sample Return.",
+          "en": "A priority target for ExoMars-2020 and Mars Sample Return."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0.5,
+      "sulfate": 0.5,
+      "basalt": 2,
+      "clay": 3,
+      "ilmenite": 0
+    }
+  },
+  {
+    "slug": "chasma-boreale",
+    "name": {
+      "ru": "Бореальный каньон и равнина Севера",
+      "en": "Chasma Boreale and Planitia Borealis",
+      "uz": "Shimoliy tekislik"
+    },
+    "body": "mars",
+    "center": [
+      60,
+      78
+    ],
+    "radiusKm": 1000,
+    "terrainTags": [
+      "polar",
+      "water-ice",
+      "layered-deposit",
+      "eskers"
+    ],
+    "description": {
+      "ru": "Гигантский ледник на севере Марса: слоистый конус выноса и лавовые озёра на дне. Радар MARSIS напрямую измерил толщу водяного льда.",
+      "en": "A giant northern ice sheet: a layered debris apron and lava lakes on its floor. The MARSIS radar measured the ice thickness directly.",
+      "uz": "Marsning shimoli yuzasidagi ulkan muzlik: qatlamli konus va lava ko'llar. MARSIS radari muz qalinligini to'g'ridan-to'g'ri o'lchagan."
+    },
+    "features": {
+      "relief": {
+        "value": 0.75,
+        "evidence": "high",
+        "note": {
+          "ru": "Пологие склоны конуса выноса.",
+          "en": "Gentle slopes of the debris apron."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.98,
+        "evidence": "high",
+        "note": {
+          "ru": "Средняя температура близка к −70 °C.",
+          "en": "Mean temperature near −70 °C."
+        }
+      },
+      "illumination": {
+        "value": 0.85,
+        "evidence": "high",
+        "note": {
+          "ru": "Слабый УФ и очень длинная ночь.",
+          "en": "Weak UV and a very long night."
+        }
+      },
+      "hydrology": {
+        "value": 0.95,
+        "evidence": "high",
+        "note": {
+          "ru": "Глубинный лёд и подповерхностная вода.",
+          "en": "Subsurface ice and buried water."
+        }
+      },
+      "engineering": {
+        "value": 0.75,
+        "evidence": "medium",
+        "note": {
+          "ru": "Ключ к марсианским ресурсам и климату прошлого.",
+          "en": "The key to Martian resources and past climate."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0,
+      "sulfate": 1,
+      "basalt": 1.5,
+      "clay": 0.2,
+      "ilmenite": 0
+    }
+  },
+  {
+    "slug": "argyre-basin",
+    "name": {
+      "ru": "Бассейн Аргир",
+      "en": "Argyre Basin",
+      "uz": "Argir havzasi"
+    },
+    "body": "mars",
+    "center": [
+      -43,
+      -49.7
+    ],
+    "radiusKm": 500,
+    "terrainTags": [
+      "impact-basin",
+      "layered-deposit",
+      "ice",
+      "wind"
+    ],
+    "description": {
+      "ru": "Круглый ударный бассейн диаметром 630 км, заполненный слоистыми отложениями. Похож на земные ударные структуры вроде бассейна Рейс.",
+      "en": "A 630 km circular impact basin filled with layered deposits. A counterpart to terrestrial structures like the Ries basin.",
+      "uz": "630 km li diametrdagi dumalo udar baskani, qatlamlar bilan to'lgan. Yer yuzasidagi Ries o'rniga o'xshaydi."
+    },
+    "features": {
+      "relief": {
+        "value": 0.65,
+        "evidence": "medium",
+        "note": {
+          "ru": "Кольцевой вал и внутреннее кольцо.",
+          "en": "A rim wall and an inner ring."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.93,
+        "evidence": "medium",
+        "note": {
+          "ru": "Южное полушарие, холодная пустыня.",
+          "en": "Southern hemisphere cold desert."
+        }
+      },
+      "illumination": {
+        "value": 0.6,
+        "evidence": "medium",
+        "note": {
+          "ru": "Умеренный УФ в 50° ю. ш.",
+          "en": "Moderate UV at 50°S."
+        }
+      },
+      "hydrology": {
+        "value": 0.5,
+        "evidence": "low",
+        "note": {
+          "ru": "Есть отложения льда, следы воды слабые.",
+          "en": "Ice deposits present; water traces are weak."
+        }
+      },
+      "engineering": {
+        "value": 0.7,
+        "evidence": "medium",
+        "note": {
+          "ru": "Структурный аналог Рейс и других бассейнов.",
+          "en": "A structural analogue to Ries and other basins."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0.3,
+      "sulfate": 1.5,
+      "basalt": 1.5,
+      "clay": 1,
+      "ilmenite": 0
+    }
+  },
+  {
+    "slug": "ceraunius-tholus",
+    "name": {
+      "ru": "Вулкан Церауний",
+      "en": "Ceraunius Tholus",
+      "uz": "Seruniy vulqoni"
+    },
+    "body": "mars",
+    "center": [
+      -26.4,
+      14.5
+    ],
+    "radiusKm": 30,
+    "terrainTags": [
+      "hydrothermal",
+      "silica",
+      "phreatomagmatic",
+      "crater"
+    ],
+    "description": {
+      "ru": "Вулкан с горящими фумаролами и обширным кремнезёмным месторождением вокруг — вероятный аналог земных риолитовых систем.",
+      "en": "A volcano with warm slopes and an extensive silica deposit around it — a likely analogue for terrestrial rhyolitic systems.",
+      "uz": "Isiq yonbag'irlari va atrofida keng kremniy konsepsi bor vulqon — Yer riolit tizimlarining analogi."
+    },
+    "features": {
+      "relief": {
+        "value": 0.45,
+        "evidence": "medium",
+        "note": {
+          "ru": "Щитообразный вулкан с двумя кратерами.",
+          "en": "A shield volcano with two craters."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.86,
+        "evidence": "medium",
+        "note": {
+          "ru": "Тропические широты, сухо.",
+          "en": "Tropical latitudes, dry."
+        }
+      },
+      "illumination": {
+        "value": 0.6,
+        "evidence": "medium",
+        "note": {
+          "ru": "Высокий УФ на экваторе.",
+          "en": "High UV at the equator."
+        }
+      },
+      "hydrology": {
+        "value": 0.68,
+        "evidence": "medium",
+        "note": {
+          "ru": "Гидротермальные флюиды зафиксированы CRISM.",
+          "en": "Hydrothermal fluids detected by CRISM."
+        }
+      },
+      "engineering": {
+        "value": 0.85,
+        "evidence": "medium",
+        "note": {
+          "ru": "Референс для кислых источников Земли.",
+          "en": "A reference for acidic springs on Earth."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0.5,
+      "sulfate": 1.5,
+      "basalt": 2,
+      "clay": 0.3,
+      "ilmenite": 0
+    }
+  },
+  {
+    "slug": "shackleton-crater",
+    "name": {
+      "ru": "Кратер Шеклтон",
+      "en": "Shackleton Crater",
+      "uz": "Shaklton krateri"
+    },
+    "body": "moon",
+    "center": [
+      179.5,
+      -89.9
+    ],
+    "radiusKm": 21,
+    "terrainTags": [
+      "polar",
+      "water-ice",
+      "permanently-shadowed",
+      "t outpost"
+    ],
+    "description": {
+      "ru": "Кратер у южного полюса Луны почти целиком в тени. Зафиксировано постоянное пятно водяного льда — главный кандидат на базу в натальном полюсе.",
+      "en": "A crater near the lunar south pole, almost entirely in shadow. A persistent patch of water ice was detected — the leading candidate for a base at the natal pole.",
+      "uz": "Oy janubiy qutbasidagi krater, deyarli butunlay soyada. Doimiy suv muzi topilgan — tug'ilish qutbasidagi baza uchun asosiy nomzod."
+    },
+    "features": {
+      "relief": {
+        "value": 0.55,
+        "evidence": "high",
+        "note": {
+          "ru": "Глубокий кратер с резким валом.",
+          "en": "A deep crater with a sharp rim."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.99,
+        "evidence": "high",
+        "note": {
+          "ru": "Дно −240 °C, вечная тень.",
+          "en": "Floor at −240 °C, permanent shadow."
+        }
+      },
+      "illumination": {
+        "value": 0.99,
+        "evidence": "high",
+        "note": {
+          "ru": "Никакой атмосферы, жёсткое УФ и космическая радиация.",
+          "en": "No atmosphere: hard UV and space radiation."
+        }
+      },
+      "hydrology": {
+        "value": 0.85,
+        "evidence": "high",
+        "note": {
+          "ru": "Лёд в постоянно затенённой зоне.",
+          "en": "Ice inside the permanently shadowed region."
+        }
+      },
+      "engineering": {
+        "value": 0.95,
+        "evidence": "high",
+        "note": {
+          "ru": "Цель глобальной лунной полярной программы.",
+          "en": "The target of the global lunar polar programme."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0,
+      "sulfate": 0.1,
+      "basalt": 2,
+      "clay": 0,
+      "ilmenite": 0.3
+    }
+  },
+  {
+    "slug": "mare-tranquillitatis",
+    "name": {
+      "ru": "Море Спокойствия",
+      "en": "Mare Tranquillitatis",
+      "uz": "Tinchlik dengizi"
+    },
+    "body": "moon",
+    "center": [
+      31.4,
+      8.5
+    ],
+    "radiusKm": 800,
+    "terrainTags": [
+      "mare",
+      "basalt",
+      "flat",
+      "apollo-11"
+    ],
+    "description": {
+      "ru": "Тёмное базальтовое лунное море, почти идеально плоское. Здесь Apollo 11 впервые высадился; базальты этой равнины — прямой аналог марсианских базальтов.",
+      "en": "A dark basaltic lunar mare, almost perfectly flat. Apollo 11 landed here; the plain's basalts are a direct analogue for Martian basalts.",
+      "uz": "Qorong'i bazaltli oy dengizi, deyarli tekis. Apollo 11 shu yerda qo'ngan; oy bazaltlari Mars bazaltlarining bevosita analogi."
+    },
+    "features": {
+      "relief": {
+        "value": 0.98,
+        "evidence": "high",
+        "note": {
+          "ru": "Отклонение высот — метры на сотни километров.",
+          "en": "Height variation of metres over hundreds of kilometres."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.9,
+        "evidence": "high",
+        "note": {
+          "ru": "Днём +120 °C, ночью −180 °C.",
+          "en": "+120 °C by day, −180 °C at night."
+        }
+      },
+      "illumination": {
+        "value": 0.95,
+        "evidence": "high",
+        "note": {
+          "ru": "Полное отсутствие атмосферы.",
+          "en": "No atmosphere whatsoever."
+        }
+      },
+      "hydrology": {
+        "value": 0.05,
+        "evidence": "high",
+        "note": {
+          "ru": "Лёд только в мелких кратерах у полюсов.",
+          "en": "Ice only in small polar craters."
+        }
+      },
+      "engineering": {
+        "value": 0.9,
+        "evidence": "high",
+        "note": {
+          "ru": "Шесть высадок «Аполлонов» — эталон полевой операции.",
+          "en": "Six Apollo landings — the benchmark for field operations."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0,
+      "sulfate": 0,
+      "basalt": 5,
+      "clay": 0,
+      "ilmenite": 1
+    }
+  },
+  {
+    "slug": "south-pole-aitken",
+    "name": {
+      "ru": "Бассейн Южный полюс — Айткен",
+      "en": "South Pole-Aitken Basin",
+      "uz": "Janubiy qutba-Aytken havzasi"
+    },
+    "body": "moon",
+    "center": [
+      -169,
+      -53
+    ],
+    "radiusKm": 1500,
+    "terrainTags": [
+      "impact-basin",
+      "deep-excavation",
+      "sample-return",
+      "ancient-crust"
+    ],
+    "description": {
+      "ru": "Крупнейший и самый глубокий ударный бассейн Луны: 2500 км шириной, до 8 км глубины. Вскрывает древнюю кору — главная цель программы возврата лунных образцов.",
+      "en": "The largest and deepest lunar impact basin: 2,500 km across and up to 8 km deep. It exposes ancient crust — the top target of the lunar sample-return programme.",
+      "uz": "Oydagi eng katta va chuqur udar baskani: 2500 km, 8 km chuqurligi. Qadimiy qobiq'ni ochadi — namuna qaytarish dasturining asosiy maqsadi."
+    },
+    "features": {
+      "relief": {
+        "value": 0.8,
+        "evidence": "high",
+        "note": {
+          "ru": "Концентрические кольца и крутой внутренний склон.",
+          "en": "Concentric rings and a steep inner slope."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.97,
+        "evidence": "high",
+        "note": {
+          "ru": "Экстремальный перепад температур.",
+          "en": "Extreme thermal cycling."
+        }
+      },
+      "illumination": {
+        "value": 0.98,
+        "evidence": "high",
+        "note": {
+          "ru": "Полная ионизирующая радиация без защиты.",
+          "en": "Full ionizing radiation with no shielding."
+        }
+      },
+      "hydrology": {
+        "value": 0.1,
+        "evidence": "medium",
+        "note": {
+          "ru": "Следы льда в отдельных кратерах дна.",
+          "en": "Ice traces in some floor craters."
+        }
+      },
+      "engineering": {
+        "value": 0.95,
+        "evidence": "high",
+        "note": {
+          "ru": "Приоритетная цель NASA и ESA по возврату грунта.",
+          "en": "A priority target for NASA and ESA sample return."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0.1,
+      "sulfate": 0,
+      "basalt": 2,
+      "clay": 0.4,
+      "ilmenite": 0.6
+    }
+  },
+  {
+    "slug": "tycho-crater",
+    "name": {
+      "ru": "Кратер Тихо",
+      "en": "Tycho Crater",
+      "uz": "Tixo krateri"
+    },
+    "body": "moon",
+    "center": [
+      -11.4,
+      -43.3
+    ],
+    "radiusKm": 42,
+    "terrainTags": [
+      "impact-crater",
+      "ray-system",
+      "ejecta",
+      "fresh"
+    ],
+    "description": {
+      "ru": "Молодой кратер с яркими лучами и системой террас на склонах. Эталон свежего ударного кратера — по нему калибруют ударные процессы на всех телах Солнечной системы.",
+      "en": "A young crater with bright rays and terraced slopes. The benchmark for a fresh impact structure, used to calibrate impact processes across the Solar System.",
+      "uz": "Yorqin nurlar va terrasa bilan yosh krater. Yangi udar tuzilmalari uchun etalon — Quyosh tizimi bo'ylab kalibratsiya qilinadi."
+    },
+    "features": {
+      "relief": {
+        "value": 0.7,
+        "evidence": "high",
+        "note": {
+          "ru": "Острый вал 4 км высотой.",
+          "en": "A 4 km-high sharp rim."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.9,
+        "evidence": "high",
+        "note": {
+          "ru": "Полный диапазон от −180 до +120 °C.",
+          "en": "Full −180 to +120 °C range."
+        }
+      },
+      "illumination": {
+        "value": 0.9,
+        "evidence": "high",
+        "note": {
+          "ru": "Резкие тени от рельефа.",
+          "en": "Sharp terrain shadows."
+        }
+      },
+      "hydrology": {
+        "value": 0.02,
+        "evidence": "high",
+        "note": {
+          "ru": "Атмосферы и воды нет.",
+          "en": "No atmosphere and no water."
+        }
+      },
+      "engineering": {
+        "value": 0.6,
+        "evidence": "medium",
+        "note": {
+          "ru": "Референс для ударных земных структур.",
+          "en": "A reference for terrestrial impact structures."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0,
+      "sulfate": 0,
+      "basalt": 1.5,
+      "clay": 0.2,
+      "ilmenite": 0.3
+    }
+  },
+  {
+    "slug": "marius-hills-pit",
+    "name": {
+      "ru": "Яма в холмах Мариус",
+      "en": "Marius Hills Pit",
+      "uz": "Marius tepaligidagi tuyniq"
+    },
+    "body": "moon",
+    "center": [
+      -15.5,
+      17
+    ],
+    "radiusKm": 0.6,
+    "terrainTags": [
+      "lava-tube",
+      "skylight",
+      "shelter",
+      "sinuous-rille"
+    ],
+    "description": {
+      "ru": "Знаменитый «небесный просвет» — колодец в лунном море, через который видно дно лавовой трубки. Главный кандидат на подземное убежище для экипажа.",
+      "en": "The famous skylight: a well into a lunar mare that looks down into a lava tube. The leading candidate for crewed underground shelter.",
+      "uz": "Noladigan mashhur teshik: oy dengizidagi tuyniq, lava quvurining tagiga qaragan. Ekipaj uchun yerdan osti boshpanasining asosiy nomzodi."
+    },
+    "features": {
+      "relief": {
+        "value": 0.6,
+        "evidence": "high",
+        "note": {
+          "ru": "Пологий базальтовый склон с провалом.",
+          "en": "A gentle basaltic slope pierced by a collapse pit."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.88,
+        "evidence": "high",
+        "note": {
+          "ru": "Трубка спасает от суточных перепадов.",
+          "en": "A tube shelters against the daily swing."
+        }
+      },
+      "illumination": {
+        "value": 0.85,
+        "evidence": "high",
+        "note": {
+          "ru": "Под землёй радиация падает в разы.",
+          "en": "Underground, radiation drops sharply."
+        }
+      },
+      "hydrology": {
+        "value": 0.05,
+        "evidence": "medium",
+        "note": {
+          "ru": "Лёд возможен в глубине трубки.",
+          "en": "Ice is possible deep in the tube."
+        }
+      },
+      "engineering": {
+        "value": 0.98,
+        "evidence": "high",
+        "note": {
+          "ru": "Эталон лавовой трубки как убежища.",
+          "en": "The benchmark lava-tube shelter."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0,
+      "sulfate": 0,
+      "basalt": 4,
+      "clay": 0,
+      "ilmenite": 0.8
+    }
+  },
+  {
+    "slug": "apennines-hadley",
+    "name": {
+      "ru": "Апеннины и долина Хэдли",
+      "en": "Apennines and Hadley Rille",
+      "uz": "Apeninlar va Hedley yarmig'i"
+    },
+    "body": "moon",
+    "center": [
+      -12,
+      26
+    ],
+    "radiusKm": 60,
+    "terrainTags": [
+      "apollo-15",
+      "rille",
+      "basaltic-plain",
+      "traverse"
+    ],
+    "description": {
+      "ru": "Место высадки Apollo 15: горный массив Апеннины, лавовая трубка-рилль Хэдли и базальтовая равнина. Эталон лунной геологической съёмки с маршрутом и пробами.",
+      "en": "The Apollo 15 landing site: the Apennine mountains, the Hadley Rille lava tube, and a basaltic plain. The benchmark for a lunar traverse with sampling.",
+      "uz": "Apollo 15 landing nuqtasi: Apenin tog'lari, Hedley rille lava трубкаси va bazaltli tekislik. Geologik sayl yo'li namunasi."
+    },
+    "features": {
+      "relief": {
+        "value": 0.65,
+        "evidence": "high",
+        "note": {
+          "ru": "Горы 4 км высотой рядом с равниной.",
+          "en": "4 km mountains right next to a plain."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.89,
+        "evidence": "high",
+        "note": {
+          "ru": "Открытая поверхность, полный перепад.",
+          "en": "Open surface, full thermal swing."
+        }
+      },
+      "illumination": {
+        "value": 0.92,
+        "evidence": "high",
+        "note": {
+          "ru": "Прямое солнечное излучение и УФ.",
+          "en": "Direct sunlight and UV."
+        }
+      },
+      "hydrology": {
+        "value": 0.03,
+        "evidence": "high",
+        "note": {
+          "ru": "Следов воды в рилле нет.",
+          "en": "No water traces in the rille."
+        }
+      },
+      "engineering": {
+        "value": 0.92,
+        "evidence": "high",
+        "note": {
+          "ru": "Эталон Apollo 15: 28 кг образцов, 3 выхода.",
+          "en": "The Apollo 15 benchmark: 28 kg of samples, three EVAs."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0,
+      "sulfate": 0,
+      "basalt": 3.5,
+      "clay": 0.1,
+      "ilmenite": 0.6
+    }
+  },
+  {
+    "slug": "amundsen-crater",
+    "name": {
+      "ru": "Кратер Амундсена",
+      "en": "Amundsen Crater",
+      "uz": "Amundsen krateri"
+    },
+    "body": "moon",
+    "center": [
+      -101.5,
+      -79
+    ],
+    "radiusKm": 30,
+    "terrainTags": [
+      "polar",
+      "water-ice",
+      "sunlit-peak",
+      "cold-trap"
+    ],
+    "description": {
+      "ru": "Южнополярный кратер с редчайшим случаем: вершина центрального пика постоянно освещена, а окружающая плоская часть — в вечной тени. Идеальная геометрия для измерения полярных ресурсов.",
+      "en": "A south-polar crater with a rare configuration: its central peak is permanently sunlit while the surrounding floor stays in permanent shadow. Ideal geometry for measuring polar resources.",
+      "uz": "Kam uchraydigan janubiy qutba krateri: markaziy cho'qqi doimiy yoritilgan, atrofi doimiy soyada. Qutba resurslarini o'lchash uchun ideal geometriya."
+    },
+    "features": {
+      "relief": {
+        "value": 0.6,
+        "evidence": "high",
+        "note": {
+          "ru": "Центральный пик с резким контрастом света и тени.",
+          "en": "A central peak with sharp light-shadow contrast."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.96,
+        "evidence": "high",
+        "note": {
+          "ru": "Дно −250 °C, пик нагревается выше нуля.",
+          "en": "Floor at −250 °C; the peak warms above zero."
+        }
+      },
+      "illumination": {
+        "value": 0.97,
+        "evidence": "high",
+        "note": {
+          "ru": "Прямой солнечный свет рядом с вечной тенью.",
+          "en": "Direct sunlight next to permanent shadow."
+        }
+      },
+      "hydrology": {
+        "value": 0.9,
+        "evidence": "high",
+        "note": {
+          "ru": "Лёд в трапециях и «холодных ловушках».",
+          "en": "Ice in the terraces and cold traps."
+        }
+      },
+      "engineering": {
+        "value": 0.9,
+        "evidence": "high",
+        "note": {
+          "ru": "Полярная база и добыча ресурсов.",
+          "en": "A polar base and resource extraction."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0,
+      "sulfate": 0.1,
+      "basalt": 2,
+      "clay": 0,
+      "ilmenite": 0.3
+    }
+  },
+  {
+    "slug": "orientale-basin",
+    "name": {
+      "ru": "Бассейн Ориентале",
+      "en": "Orientale Basin",
+      "uz": "Orientale havzasi"
+    },
+    "body": "moon",
+    "center": [
+      -95,
+      -19.4
+    ],
+    "radiusKm": 300,
+    "terrainTags": [
+      "impact-basin",
+      "targeted",
+      "ejecta",
+      "chronology"
+    ],
+    "description": {
+      "ru": "Классический ударный бассейн с двумя кольцевыми валами почти идеальной круглой формы. Эталон для хронологии лунной поверхности по плотности кратеров.",
+      "en": "The classic impact basin with two near-perfectly circular ring walls. The reference for dating the lunar surface by crater density.",
+      "uz": "Ikki halqa devori bo'lgan klassik udar havzasi. Krater zichligi bo'yicha oy yuzasini yosh o'lchash uchun etalon."
+    },
+    "features": {
+      "relief": {
+        "value": 0.75,
+        "evidence": "high",
+        "note": {
+          "ru": "Кольцевые горы высотой 3 км.",
+          "en": "Ring mountains 3 km high."
+        }
+      },
+      "geology": {
+        "value": 0,
+        "evidence": "high",
+        "note": {
+          "ru": "Считается по косинусу минерального вектора.",
+          "en": "Scored via cosine similarity of the mineral vector."
+        }
+      },
+      "climate": {
+        "value": 0.9,
+        "evidence": "high",
+        "note": {
+          "ru": "Открытая облучаемая поверхность.",
+          "en": "An exposed, irradiated surface."
+        }
+      },
+      "illumination": {
+        "value": 0.93,
+        "evidence": "high",
+        "note": {
+          "ru": "Полная радиационная среда.",
+          "en": "A fully irradiated environment."
+        }
+      },
+      "hydrology": {
+        "value": 0.03,
+        "evidence": "high",
+        "note": {
+          "ru": "Атмосферы нет.",
+          "en": "No atmosphere."
+        }
+      },
+      "engineering": {
+        "value": 0.75,
+        "evidence": "medium",
+        "note": {
+          "ru": "Структурный аналог земных бассейнов.",
+          "en": "A structural analogue to terrestrial basins."
+        }
+      }
+    },
+    "geologyMaterials": {
+      "hematite": 0,
+      "sulfate": 0,
+      "basalt": 2,
+      "clay": 0.2,
+      "ilmenite": 0.5
+    }
+  }
+]

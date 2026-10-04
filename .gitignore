@@ -1,0 +1,19 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+*.log
+.DS_Store
+.vite/
+.cache/
+coverage/
+# Planet textures are vendored under web/public/textures: ~2.5 MB of binaries.
+# Keep them out of git history and fetch them with scripts/fetch-textures.sh.
+web/public/textures/
+
+# Stale theme files from an earlier data draft; data/sites.json is the source of truth.
+data/sites-mars.json
+data/sites-moon.json
+data/sites-central-asia.json
+data/sites-extra.json
